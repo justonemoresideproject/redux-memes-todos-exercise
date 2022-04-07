@@ -1,0 +1,56 @@
+.memesWrapper {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    border-color: chartreuse;
+    border-style: solid;
+}
+
+.memeWrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    width: 300px;
+    height: 300px;
+
+    position: relative;
+    
+    border-color: crimson;
+    border-style: solid;
+
+    display: inline-flex;
+
+    align-self: center;
+}  
+
+.topText {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    
+    top: -130px;
+    
+    position: relative;
+
+    text-align: center;
+    align-self: center;
+
+    font-size: 30px;    
+}
+
+.bottomText {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+
+    bottom: 120px;
+
+    position: fixed;
+    
+    text-align: center;
+    align-self: center;
+
+    font-size: 30px;
+}
