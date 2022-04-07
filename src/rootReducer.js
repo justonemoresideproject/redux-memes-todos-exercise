@@ -6,6 +6,7 @@ function rootReducer(state = INITIAL_STATE, action) {
             {
                 const newMeme = action.payload
                 return {
+                    ...state, 
                     memes: [...state.memes, newMeme]
                 };
             }
@@ -13,15 +14,17 @@ function rootReducer(state = INITIAL_STATE, action) {
             {
                 const newTodo = action.payload
                 return {
+                    ...state,
                     todos: [...state.todos, newTodo]
                 }
             }
         case "REMOVE_TODO":
             return {
-                memes: [...state.memes],
+                ...state,
                 todos: state.todos.filter((index) => index !== action.payload)
             }
-        default: return state;
+        default: 
+            return state;
     }
 }
 
